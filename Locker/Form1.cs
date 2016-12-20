@@ -70,6 +70,8 @@ To do:
 -Open first time-> choose PW (and language)
     Quality of live change
 
+-Make button/link to open Locker folder in explorer
+
 */
 namespace Locker
 {
@@ -174,7 +176,7 @@ namespace Locker
             }
             else
             {
-                messageLabel.Text = "You need to enter the current password inorder to change it";
+                messageLabel.Text = "You need to enter the current password in order to change it";
                 textBoxPassword.Text = "";
             }
         }

@@ -31,3 +31,14 @@ C:\Users\karkk\Dropbox\Locker app\DEV\Locker\Locker\obj\Debug\Locker.Form2.resou
 C:\Users\karkk\Dropbox\Locker app\DEV\Locker\Locker\obj\Debug\Locker.Form3.resources
 C:\Users\karkk\Dropbox\Locker app\DEV\Locker\Locker\obj\Debug\Locker.Properties.Resources.resources
 C:\Users\karkk\Dropbox\Locker app\DEV\Locker\Locker\obj\Debug\Locker.csproj.GenerateResource.Cache
+E:\Git\Locker\Locker\bin\Debug\Locker.exe.config
+E:\Git\Locker\Locker\obj\Debug\Locker.exe
+E:\Git\Locker\Locker\obj\Debug\Locker.pdb
+E:\Git\Locker\Locker\bin\Debug\Locker.exe
+E:\Git\Locker\Locker\bin\Debug\Locker.pdb
+E:\Git\Locker\Locker\obj\Debug\Locker.csprojResolveAssemblyReference.cache
+E:\Git\Locker\Locker\obj\Debug\Locker.Form1.resources
+E:\Git\Locker\Locker\obj\Debug\Locker.Form2.resources
+E:\Git\Locker\Locker\obj\Debug\Locker.Form3.resources
+E:\Git\Locker\Locker\obj\Debug\Locker.Properties.Resources.resources
+E:\Git\Locker\Locker\obj\Debug\Locker.csproj.GenerateResource.Cache

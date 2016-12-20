@@ -136,7 +136,7 @@ namespace Locker
                 {
                     s = "Unlock";
                     return s;
-            }
+                }
                 else if (Directory.Exists(unlockedFolder))
                 {
                     s = "Lock";
@@ -190,7 +190,24 @@ namespace Locker
             //parse .exe away
             //return 
             String p = System.Reflection.Assembly.GetEntryAssembly().Location;
-            return p;
+            String delete = "Locker.exe";
+            char delimiterCharacter = '\u005C';
+            String[] parse = p.Split(delimiterCharacter);
+            String finalPath = "";
+
+            foreach (string s in parse)
+            {
+                if(s != delete)
+                {
+                    finalPath += s + '\u005C';
+                }
+                else
+                {
+                    finalPath += "Locker";
+                }
+            }
+
+            return finalPath;
         }
     }
 }
