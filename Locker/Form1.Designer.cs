@@ -91,6 +91,7 @@
             this.messageLabel.Size = new System.Drawing.Size(146, 13);
             this.messageLabel.TabIndex = 2;
             this.messageLabel.Text = "Wellcome to use Locker app!";
+            this.messageLabel.Click += new System.EventHandler(this.messageLabel_Click);
             // 
             // menuStrip1
             // 

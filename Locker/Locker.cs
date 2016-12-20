@@ -203,7 +203,7 @@ namespace Locker
                 }
                 else
                 {
-                    finalPath += "Locker";
+                    finalPath += "Locker" + '\u005C';
                 }
             }
 

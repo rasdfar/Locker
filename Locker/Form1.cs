@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Locker;
 using System.Reflection;
 using System.IO;
+using System.Diagnostics;
 /*
 Relese 12.10.2015
 version 0.2*
@@ -24,8 +25,8 @@ You don't have to worry about leaving unwanted hidden folders
 or files this way.
 
 
-    -Jani Kärkkäinen
-    *since change to C#
+-Jani Kärkkäinen
+*since change to C#
 */
 /*
 To do:
@@ -69,8 +70,6 @@ To do:
 
 -Open first time-> choose PW (and language)
     Quality of live change
-
--Make button/link to open Locker folder in explorer
 
 */
 namespace Locker
@@ -130,8 +129,9 @@ namespace Locker
                     unlock = locker.getPassword(givenPassword);
                     if (unlock)
                     {
+                        messageLabel.ForeColor = System.Drawing.Color.Blue;
                         String path = locker.getPath();
-                        messageLabel.Text = "Folder unlocked at " + path; //parse + make button
+                        messageLabel.Text = "Folder unlocked at " + path; //Shows path to unlocked folder
                         locker.unlockFolder();
                         lockButton.Text = locker.status();
                         setPicture();
@@ -247,6 +247,15 @@ namespace Locker
             if (e.KeyCode == Keys.Enter)
             {
                 lockUnlock();
+            }
+        }
+
+        private void messageLabel_Click(object sender, EventArgs e)
+        {
+            String path = locker.getPath();
+            if (messageLabel.Text == "Folder unlocked at " + path)
+            {
+                Process.Start(@path);
             }
         }
     }
