@@ -28,50 +28,7 @@ or files this way.
 -Jani Kärkkäinen
 *since change to C#
 */
-/*
-To do:
 
--CRYPT THE LOCKER CONTENTS 
-    Guite urgent since it's security feature.
-    Maiby make own class from it if it's large feature to make.
-    But make it optional function since it may cause some data loss.
-    and not every user simply need it.
-
--ReWrite the code on C++ so exe cannot be reflected from the exe file(http://stackoverflow.com/questions/2659513/how-to-get-source-code-of-a-windows-executable)
-    Better sooner than laiter.
-    Security issue!
-
--Change password.txt into Settings/data/appData.txt or smtg like that.
-
--Use better crypt method than base64 with password
-    Too weak easy to open.
-    Something that uses its own keyword in crypting and use it only inside C++ code.
-    Or generate random seed into password.txt file and use it with cryption:
-        -seed: "random"
-        -password: "(password*(mystery funktion)^seed)"
-    PGP?(https://en.wikipedia.org/wiki/Pretty_Good_Privacy)
-
--User interface quality of live
-    Maiby make own installation slider show when app is first time opened.
-    Better images and icons.
-    Default grey style is kinda dull.
-
--Online update option and new class for it.
-    Not really urgent feature but would be usefull learning.
-    Thread needed?
-
--Change about text:
-    Change version into variable so you dont forget to change it everytime.
-    Tell user not to rename locker folder.
-    There is text about readmefile in it, that is no longer used.
-
--Language options
-    Not urgent
-
--Open first time-> choose PW (and language)
-    Quality of live change
-
-*/
 namespace Locker
 {
     //Main form that program uses
